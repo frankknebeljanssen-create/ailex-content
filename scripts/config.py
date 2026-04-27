@@ -7,8 +7,8 @@ Adjust here, not in the fetch scripts.
 # Sonnet has higher rate limits than Opus and is ~5x cheaper. Quality is more
 # than sufficient for both research/discovery and per-article summarization.
 # If you want to upgrade research to Opus later, change MODEL_RESEARCH only.
-MODEL_RESEARCH = "claude-sonnet-4-6"
-MODEL_SUMMARY  = "claude-sonnet-4-6"
+MODEL_RESEARCH = "claude-haiku-4-5"
+MODEL_SUMMARY  = "claude-haiku-4-5"
 
 # Throttle between successive summarize calls (seconds).
 # Sonnet's rate limit is comfortable, but a small cushion never hurts.
