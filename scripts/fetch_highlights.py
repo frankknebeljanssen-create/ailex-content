@@ -1,25 +1,20 @@
 """
 Highlights pipeline (Mon/Wed/Fri).
 
-Flow:
-1. Load existing highlights.json as cache.
-2. Single discovery+summary call: web_search across the open web, ask Claude to
-   return JSON list with headline + 50-100w teaser + source URL.
-   Pass the list of cached URLs so Claude can avoid duplicates.
-3. Write data/highlights.json.
+Single-call architecture: web_search across the open web, Claude returns JSON
+list with headline + 50-100w teaser + URL.
 
-Architecture is simpler than fetch_news.py because:
-- only 6 items
-- teasers are short (50-100w), no separate fetch step needed
-- Claude can do discovery + summary in one go using web_search
+Resilient against tier-1 rate limits via retry-with-wait on RateLimitError.
 """
 
 import json
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import anthropic
 from anthropic import Anthropic
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -29,6 +24,9 @@ from config import (
 )
 
 DATA_PATH = Path(DATA_DIR) / HIGHLIGHTS_FILE
+
+RATELIMIT_WAIT_SECONDS = 60
+RATELIMIT_MAX_RETRIES = 5
 
 
 def load_cache():
@@ -47,6 +45,18 @@ def save(items):
         "items": items,
     }
     DATA_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def call_with_retry(fn, label="api"):
+    last_err = None
+    for attempt in range(1, RATELIMIT_MAX_RETRIES + 1):
+        try:
+            return fn()
+        except anthropic.RateLimitError as e:
+            last_err = e
+            print(f"    ⏳ rate limit on {label}, waiting {RATELIMIT_WAIT_SECONDS}s (attempt {attempt}/{RATELIMIT_MAX_RETRIES})")
+            time.sleep(RATELIMIT_WAIT_SECONDS)
+    raise last_err
 
 
 def discover_and_summarize(client, cached_urls):
@@ -69,38 +79,61 @@ Recherchiere offen im Web. Bevorzuge deutsche Fachmedien (LTO, Beck-aktuell, Hei
 Vermeide Duplikate zu diesen bereits gepflegten Themen:
 {avoid}
 
-WICHTIG: Antworte AUSSCHLIESSLICH mit einem JSON-Array, ohne Code-Fence, ohne Einleitung. Format:
+Nutze zuerst das web_search Tool zur Recherche.
+Rufe DANACH das Tool `submit_highlights` mit deinen {HIGHLIGHTS_TARGET_COUNT} Funden auf.
 
-[
-  {{
-    "headline": "Kurze prägnante Überschrift, 4-8 Wörter",
-    "teaser": "{word_min}–{word_max} Wörter Anriss in Du-Form, sachlich, mit konkreten Bezügen wo möglich (Datum, Norm, Aktenzeichen)",
-    "url": "https://... (Link zur weiterführenden Quelle)"
-  }},
-  ... insgesamt {HIGHLIGHTS_TARGET_COUNT} Items
-]
+Anforderungen pro Item:
+- headline: Kurze prägnante Überschrift, 4-8 Wörter
+- teaser: {word_min}–{word_max} Wörter Anriss in Du-Form, sachlich, mit konkreten Bezügen wo möglich (Datum, Norm, Aktenzeichen)
+- url: Link zur weiterführenden Quelle
 
 Du-Form, sachlich, ohne Hype, ohne Panikmache."""
 
-    response = client.messages.create(
-        model=MODEL_RESEARCH,
-        max_tokens=6000,
-        tools=[{
-            "type": "web_search_20250305",
-            "name": "web_search",
-            "max_uses": 12,
-        }],
-        messages=[{"role": "user", "content": prompt}],
-    )
+    submit_tool = {
+        "name": "submit_highlights",
+        "description": "Reicht die Liste der recherchierten Schlaglichter ein.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "highlights": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "headline": {"type": "string"},
+                            "teaser":   {"type": "string"},
+                            "url":      {"type": "string"},
+                        },
+                        "required": ["headline", "teaser", "url"],
+                    },
+                }
+            },
+            "required": ["highlights"],
+        },
+    }
 
-    text = "".join(getattr(b, "text", "") for b in response.content if getattr(b, "type", None) == "text").strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*\n?", "", text)
-        text = re.sub(r"\n?```\s*$", "", text)
-    start, end = text.find("["), text.rfind("]")
-    if start >= 0 and end > start:
-        text = text[start:end + 1]
-    return json.loads(text)
+    def call():
+        return client.messages.create(
+            model=MODEL_RESEARCH,
+            max_tokens=6000,
+            tools=[
+                {
+                    "type": "web_search_20250305",
+                    "name": "web_search",
+                    "max_uses": 12,
+                },
+                submit_tool,
+            ],
+            messages=[{"role": "user", "content": prompt}],
+        )
+    response = call_with_retry(call, label="highlights research")
+
+    for block in response.content:
+        if getattr(block, "type", None) == "tool_use" and block.name == "submit_highlights":
+            return block.input.get("highlights", [])
+
+    print("  WARNING: Claude returned no submit_highlights tool call")
+    return []
 
 
 def main():
@@ -120,7 +153,6 @@ def main():
     items = []
     for i, r in enumerate(results[:HIGHLIGHTS_TARGET_COUNT]):
         url = (r.get("url") or "").strip()
-        # Reuse cached entry if same URL surfaced again (cheap consistency)
         if url in cached_by_url:
             print(f"  ✓ cached: {r.get('headline', '')[:60]}")
             items.append(cached_by_url[url])
