@@ -130,7 +130,9 @@ Du-Form, sachlich, ohne Hype, ohne Panikmache."""
 
     for block in response.content:
         if getattr(block, "type", None) == "tool_use" and block.name == "submit_highlights":
-            return block.input.get("highlights", [])
+            highlights = block.input.get("highlights", [])
+            print(f"  Tool returned {len(highlights)} highlights, first item type: {type(highlights[0]).__name__ if highlights else 'n/a'}")
+            return highlights
 
     print("  WARNING: Claude returned no submit_highlights tool call")
     return []
@@ -152,6 +154,10 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
     items = []
     for i, r in enumerate(results[:HIGHLIGHTS_TARGET_COUNT]):
+        # Defensive: skip if entry isn't a dict (Claude sometimes returns strings)
+        if not isinstance(r, dict):
+            print(f"  ⚠ skipping non-dict entry: {repr(r)[:60]}")
+            continue
         url = (r.get("url") or "").strip()
         if url in cached_by_url:
             print(f"  ✓ cached: {r.get('headline', '')[:60]}")
