@@ -75,16 +75,34 @@ def discover_candidates(client):
 
 Suche AUSSCHLIESSLICH auf diesen deutschen Quellen: {sources_text}
 
-Themenfokus:
+Themenfokus (NUR diese Themen sind relevant):
 - EU AI Act (Stand der Umsetzung, Bußgelder, Compliance)
 - Urheberrecht und KI (LAION, GEMA, OpenAI, generative KI)
 - DSGVO und KI (Workday, Schadensersatz, Bewerbungs-KI)
 - Justiz-KI (OLGA, Frauke, FraPOL)
 - Halluzinationen in der Anwaltspraxis
-- Berufsrecht Anwält:innen (BRAO, Verschwiegenheit, § 203 StGB)
+- Berufsrecht Anwält:innen (BRAO, Verschwiegenheit, § 203 StGB) — NUR mit KI-Bezug
 - AI-Act-Umsetzungsgesetze im Bundestag
+- Legal-Tech-Markt (Harvey, Noxtua, Großkanzlei-Adoption)
+- Datenschutzbehörden zu KI (BfDI, DSK, EDPB)
 
-Finde die {NEWS_TARGET_COUNT} relevantesten Artikel der letzten 1-10 Tage.
+ABSOLUT AUSSCHLIESSEN — diese Themen sind NICHT relevant, auch wenn sie auf den Quellen vorkommen:
+- Allgemeine Tagespolitik ohne KI-Bezug (Bundesregierung, Wahlen, Koalition)
+- Wirtschaftsthemen, M&A-Deals, Personalien (ausser Legal-Tech-Firmen)
+- Einzelfall-Strafurteile ohne KI-Bezug
+- Reisebuchungen, Mietrecht, Familienrecht, Erbrecht — ohne KI-Bezug
+- Sozialgerichtsbarkeit, Asylrecht — ohne KI-Bezug
+- Anwaltsberufsbild allgemein (Zulassungszahlen, Examen, Referendariat)
+- Kanzleimarketing, Kanzleimanagement allgemein
+- Kfz-Schadensersatz, Edelmetallrecht, Verbraucherrecht — ohne KI-Bezug
+- Internationale Politik (Trump, US-Justiz) ohne deutschen/EU-Bezug
+
+Qualitäts-Gate:
+- Der Artikel muss KI / Legal-Tech / Algorithmen / automatisierte Entscheidungen als ZENTRALES Thema haben.
+- Wenn KI nur am Rande erwähnt wird, NICHT aufnehmen.
+- Im Zweifel WEGLASSEN. Lieber 5 saubere Treffer als 8 mit Off-Topic-Mischung.
+
+Finde die {NEWS_TARGET_COUNT} relevantesten Artikel der letzten 1-10 Tage. Wenn du keine {NEWS_TARGET_COUNT} relevanten Treffer findest, reiche entsprechend weniger ein.
 
 Nutze zuerst das web_search Tool zur Recherche.
 Rufe DANACH das Tool `submit_candidates` mit deinen Funden auf.

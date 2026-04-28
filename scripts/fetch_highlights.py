@@ -74,13 +74,22 @@ Anders als reine Tagesnachrichten geht es hier um Themen, die strukturell heiß 
 - Embedded Agentic AI in Großkanzleien
 - DSGVO-Schadensersatz nach BAG-Workday-Urteil
 
-Recherchiere offen im Web. Bevorzuge deutsche Fachmedien (LTO, Beck-aktuell, Heise, Netzpolitik, Anwaltsblatt, Bundestag, EUR-Lex, BGH-Pressemitteilungen).
+ABSOLUT AUSSCHLIESSEN — diese Themen sind NICHT relevant:
+- Allgemeine Tagespolitik ohne KI-Bezug
+- Wirtschaftsthemen, M&A-Deals, Personalien (ausser Legal-Tech-Firmen)
+- Einzelfall-Strafurteile, Mietrecht, Familienrecht, Erbrecht — ohne KI-Bezug
+- Anwaltsberufsbild allgemein (Zulassungszahlen, Examen, Referendariat)
+- Kanzleimarketing, Kanzleimanagement allgemein
+
+Qualitäts-Gate: KI / Legal-Tech / Algorithmen / automatisierte Entscheidungen müssen ZENTRAL sein. Im Zweifel weglassen — lieber weniger als {HIGHLIGHTS_TARGET_COUNT} hochwertige Items als die Liste mit Off-Topic füllen.
+
+Recherchiere offen im Web. Bevorzuge deutsche Fachmedien (LTO, Beck-aktuell, NJW-aktuell, Heise, Netzpolitik, Anwaltsblatt, Bundestag, EUR-Lex, BGH-Pressemitteilungen).
 
 Vermeide Duplikate zu diesen bereits gepflegten Themen:
 {avoid}
 
 Nutze zuerst das web_search Tool zur Recherche.
-Rufe DANACH das Tool `submit_highlights` mit deinen {HIGHLIGHTS_TARGET_COUNT} Funden auf.
+Rufe DANACH das Tool `submit_highlights` mit deinen {HIGHLIGHTS_TARGET_COUNT} Funden auf. Wenn nicht genügend hochwertige Treffer vorliegen, reiche entsprechend weniger ein.
 
 Anforderungen pro Item:
 - headline: Kurze prägnante Überschrift, 4-8 Wörter

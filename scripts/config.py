@@ -8,11 +8,12 @@ Adjust here, not in the fetch scripts.
 # than sufficient for both research/discovery and per-article summarization.
 # If you want to upgrade research to Opus later, change MODEL_RESEARCH only.
 MODEL_RESEARCH = "claude-sonnet-4-6"
-MODEL_SUMMARY  = "claude-haiku-4-5"
+MODEL_SUMMARY  = "claude-sonnet-4-6"
 
 # Throttle between successive summarize calls (seconds).
-# Sonnet's rate limit is comfortable, but a small cushion never hurts.
-SUMMARY_SLEEP_SECONDS = 3
+# Generous setting — speed doesn't matter on GitHub Actions, quality does.
+# 15s is plenty even for the worst-case rate-limit windows.
+SUMMARY_SLEEP_SECONDS = 15
 
 # === NEWS PIPELINE ===
 # Cron: 1x daily at 07:00 Berlin (see .github/workflows/news.yml)
@@ -24,7 +25,9 @@ SUMMARY_SLEEP_SECONDS = 3
 NEWS_SOURCES = [
     {"name": "LTO",            "domain": "lto.de"},
     {"name": "Beck-aktuell",   "domain": "rsw.beck.de"},
+    {"name": "NJW-aktuell",    "domain": "beck-aktuell.de"},
     {"name": "Anwaltsblatt",   "domain": "anwaltsblatt.de"},
+    {"name": "RA-Online",      "domain": "ra-online.de"},
     {"name": "Heise",          "domain": "heise.de"},
     {"name": "Golem",          "domain": "golem.de"},
     {"name": "Netzpolitik",    "domain": "netzpolitik.org"},
