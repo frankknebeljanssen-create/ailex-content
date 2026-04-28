@@ -132,7 +132,18 @@ Wenn das Datum eines Artikels unbekannt ist, nutze {today_iso}."""
     # Find the tool_use block where Claude submitted candidates
     for block in response.content:
         if getattr(block, "type", None) == "tool_use" and block.name == "submit_candidates":
-            return block.input.get("candidates", [])
+            raw = block.input.get("candidates", [])
+            if isinstance(raw, str):
+                print(f"  Tool returned string of length {len(raw)} — parsing as JSON")
+                try:
+                    raw = json.loads(raw)
+                except json.JSONDecodeError as e:
+                    print(f"  JSON decode failed: {e}")
+                    return []
+            if not isinstance(raw, list):
+                print(f"  ⚠ unexpected type: {type(raw).__name__}")
+                return []
+            return raw
 
     # Fallback: nothing submitted
     print("  WARNING: Claude returned no submit_candidates tool call")

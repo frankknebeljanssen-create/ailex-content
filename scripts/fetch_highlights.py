@@ -130,9 +130,20 @@ Du-Form, sachlich, ohne Hype, ohne Panikmache."""
 
     for block in response.content:
         if getattr(block, "type", None) == "tool_use" and block.name == "submit_highlights":
-            highlights = block.input.get("highlights", [])
-            print(f"  Tool returned {len(highlights)} highlights, first item type: {type(highlights[0]).__name__ if highlights else 'n/a'}")
-            return highlights
+            raw = block.input.get("highlights", [])
+            # Claude sometimes serializes the array as a JSON string — unparse it
+            if isinstance(raw, str):
+                print(f"  Tool returned string of length {len(raw)} — parsing as JSON")
+                try:
+                    raw = json.loads(raw)
+                except json.JSONDecodeError as e:
+                    print(f"  JSON decode failed: {e}")
+                    return []
+            if not isinstance(raw, list):
+                print(f"  ⚠ unexpected type: {type(raw).__name__}")
+                return []
+            print(f"  Got {len(raw)} highlights")
+            return raw
 
     print("  WARNING: Claude returned no submit_highlights tool call")
     return []
