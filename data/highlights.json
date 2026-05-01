@@ -1,41 +1,4 @@
 {
-  "generated_at": "2026-04-29T06:20:06+00:00",
-  "items": [
-    {
-      "id": "hl-2026-04-29-01",
-      "headline": "KI-Schriftssatzflut überlastet Sozialgerichte",
-      "teaser": "Beim LSG NRW meldete Präsident Jens Blüggel auf der Jahrespressekonferenz (April 2026) einen Sprung der Eilverfahren um über 55 % auf 7.615 Fälle – als Mitursache gilt der Einsatz von KI durch nicht anwaltlich vertretene Kläger. Die Schriftsätze enthalten oft halluzinierte Rechtsprechung und nicht existierende Verfahrensmöglichkeiten. Der Effekt gilt laut Blüggel als bundesweiter Trend, das BSG bestätigte die Entwicklung bereits im Februar 2026. Als Reaktion testet die NRW-Sozialgerichtsbarkeit selbst KI-Lösungen zur Textfiltration.",
-      "url": "https://www.heise.de/news/Sozialgerichte-kaempfen-mit-KI-Klagen-oft-zum-Buergergeld-11270332.html"
-    },
-    {
-      "id": "hl-2026-04-29-02",
-      "headline": "GEMA vs. OpenAI: Erstes KI-Urheberrechtsurteil Europas",
-      "teaser": "Am 11. November 2025 verurteilte das LG München I (Az. 42 O 14139/24) OpenAI wegen Urheberrechtsverletzung durch Training und Betrieb von ChatGPT mit geschützten Liedtexten aus dem GEMA-Repertoire. Das Gericht verneinte die Anwendbarkeit der TDM-Schranke (§ 44b UrhG) und bejahte eine vergütungspflichtige Vervielfältigung. OpenAI hat Berufung angekündigt. Parallel läuft ein weiteres GEMA-Verfahren gegen Suno Inc. Das Urteil – ein europäisches Novum – setzt Lizenzpflichten für KI-Anbieter und wird auf seinen Bestand vor dem BGH warten lassen.",
-      "url": "https://www.gema.de/de/w/grundsatzurteil-gema-gegen-openai"
-    },
-    {
-      "id": "hl-2026-04-29-03",
-      "headline": "KI-MIG: Deutschlands AI-Act-Durchführungsgesetz im Parlament",
-      "teaser": "Am 11. Februar 2026 beschloss das Bundeskabinett das KI-Marktüberwachungs- und Innovationsförderungsgesetz (KI-MIG, BT-Drs. 21/4594). Es benennt die Bundesnetzagentur zur zentralen Marktüberwachungsbehörde und schafft das KoKIVO als Koordinierungszentrum. Für besonders sensible staatliche KI-Anwendungen – etwa Strafverfolgung – soll eine unabhängige Kontrollstelle (UKIM) entstehen. Der Bundesrat legte am 1. April 2026 Prüfbitten vor; das parlamentarische Verfahren läuft. Kanzleien und Unternehmen stehen damit erstmals einer konkreten deutschen Aufsichtsarchitektur gegenüber.",
-      "url": "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung"
-    },
-    {
-      "id": "hl-2026-04-29-04",
-      "headline": "Digital-Omnibus verschiebt AI-Act-Hochrisiko-Fristen",
-      "teaser": "Das EU-Parlament verabschiedete am 26. März 2026 sein Verhandlungsmandat für den Digital Omnibus. Darin ist vorgesehen, dass die Hochrisiko-Pflichten nach Anhang III des AI Act erst sechs Monate nach Verfügbarkeit harmonisierter Standards gelten – spätestens am 2. Dezember 2027 statt wie bislang am 2. August 2026. Für in Produkte eingebettete KI nach Anhang I gilt sogar die Auffangfrist 2. August 2028. Die Verschiebung entlastet Anbieter und Betreiber kurzfristig, ändert jedoch nichts an bestehenden GPAI-Pflichten und den Verboten verbotener KI-Praktiken.",
-      "url": "https://betriebs-berater.com/42388/2026/bb_2026_18_b4/"
-    },
-    {
-      "id": "hl-2026-04-29-05",
-      "headline": "KI-Assistenz für Richter: Grenze zur richterlichen Unabhängigkeit",
-      "teaser": "Das Anwaltsblatt analysiert in einem vieldiskutierten Beitrag (Dezember 2025), ab welcher Stufe generative KI in der Justiz die richterliche Unabhängigkeit nach Art. 97 GG tangiert. Zusammenfassende KI auf Stufe 4 trifft bereits inhaltliche Vorbewertungen; auf Stufe 5 generiert sie rechtliche Einschätzungen – beides berührt den Kernbereich. Private KI-Anbieter könnten so über Trainingsdaten subtilen inhaltlichen Einfluss gewinnen. Das BMJV fördert KI-Pilotprojekte (GSJ, MAKI, INDATA, ALeKS) mit bis zu 100 Mio. € bis 2026 – die Grenze zulässiger KI-Unterstützung ist dabei noch nicht abschließend definiert.",
-      "url": "https://anwaltsblatt.anwaltverein.de/de/themen/recht-gesetz/ki-richterliche-unabhaengigkeit"
-    },
-    {
-      "id": "hl-2026-04-29-06",
-      "headline": "Legal-AI-Berufsrecht: Verschwiegenheit vs. US-Hosting",
-      "teaser": "63,6 % der deutschen Kanzleien nutzen bereits KI (Wolters Kluwer Future Ready Lawyer 2026). Für den Markt strukturell entscheidend: Wer vertrauliche Mandatsdaten in US-gehostete Tools wie Harvey AI eingibt, riskiert einen Verstoß gegen § 43e BRAO und § 203 StGB (Anwaltsgeheimnis). Der DAV hat klargestellt, dass Kanzleianwendungen zwar in der Regel nicht unter die AI-Act-Hochrisikokategorie fallen, ab 2. August 2026 aber Transparenz- und Kennzeichnungspflichten gelten. KI-Governance wird damit zur berufsrechtlichen Pflicht – und zum zentralen Differenzierungsmerkmal im Kanzleiwettbewerb.",
-      "url": "https://www.lulius.ai/blog/legal-ai-vergleich-deutschland"
-    }
-  ]
+  "generated_at": "2026-05-01T06:33:44+00:00",
+  "items": []
 }
