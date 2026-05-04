@@ -1,4 +1,41 @@
 {
-  "generated_at": "2026-05-01T06:33:44+00:00",
-  "items": []
+  "generated_at": "2026-05-04T06:35:43+00:00",
+  "items": [
+    {
+      "id": "hl-2026-05-04-01",
+      "headline": "KI-MIG: Deutschlands AI-Act-Durchführungsgesetz im Bundestag",
+      "teaser": "Am 11. Februar 2026 beschloss das Bundeskabinett das KI-Marktüberwachungs- und Innovationsförderungsgesetz (KI-MIG) – Deutschlands nationales Durchführungsgesetz zum EU AI Act. Es benennt die Bundesnetzagentur als zentrale Marktüberwachungsbehörde und richtet das Koordinierungs- und Kompetenzzentrum KoKIVO ein. Der Bundestag beriet den Entwurf erstmals am 20. März 2026. Knackpunkt: Ohne das KI-MIG können ab 2. August 2026 geltende Hochrisiko-Pflichten in Deutschland faktisch nicht vollstreckt werden – die Zeit wird knapp.",
+      "url": "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung"
+    },
+    {
+      "id": "hl-2026-05-04-02",
+      "headline": "KI-Schriftsätze überfluten Sozialgerichte NRW",
+      "teaser": "Der Präsident des Landessozialgerichts NRW, Jens Blüggel, warnte auf der Jahrespressekonferenz 2026: Eilverfahren zum Bürgergeld stiegen 2025 um über 55 Prozent auf 7.615, viele Anträge stammen erkennbar aus KI-Generatoren. Richterinnen stoßen bereits auf Aussagen wie \"Die KI sagt aber das und das\". Hintergrund ist auch der Rückgang von Sozialrechtsanwälten. Die NRW-Sozialgerichtsbarkeit testet selbst KI-Lösungen, um die Flut zu bewältigen – ein struktureller Konflikt zwischen KI-Demokratisierung und Justizbetrieb.",
+      "url": "https://www.lto.de/recht/justiz/j/lsg-nrw-jahres-pressekonferenz-2026-ki-klagen-ueberlastung-sozialgerichte"
+    },
+    {
+      "id": "hl-2026-05-04-03",
+      "headline": "Halluzinations-Rechtsprechung: Anwälte und Sachverständige im Visier",
+      "teaser": "Zwei Grundsatzentscheidungen prägen die Debatte: Das AG Köln rügte am 2.7.2025 (Az. 312 F 130/25) einen Anwalt wegen halluzinierter BGH-Zitate als Verstoß gegen § 43a Abs. 3 BRAO. Das LG Darmstadt setzte am 10.11.2025 (Az. 19 O 527/16) einem Sachverständigen die Vergütung auf 0,00 € fest, weil er sein medizinisches Gutachten undeklariert per KI erstellt hatte – Verstoß gegen § 407a Abs. 3 ZPO. Die Rechtsprechung verdichtet sich: Transparenz gegenüber dem Gericht ist Pflicht, keine Option.",
+      "url": "https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/lg-darmstadt-19o52716-sachverstaendiger-ki-gutachten-kostenerstattung-2026-01-02"
+    },
+    {
+      "id": "hl-2026-05-04-04",
+      "headline": "Streitwertreform + KI: Amtsgerichte unter Druck",
+      "teaser": "Seit 1. Januar 2026 gilt das neue Zuständigkeitsgesetz: Zivilverfahren bis 10.000 Euro wandern zu den Amtsgerichten, wo kein Anwaltszwang besteht. Die Kehrseite: Immer mehr Bürger nutzen ChatGPT & Co. zur Schriftsatzerstellung – mit sprachgewaltig klingenden, aber inhaltlich dünnen Ergebnissen. LTO und Analysten sehen eine strukturelle Verschiebung: KI ersetzt den ersten Gang zum Anwalt, Gerichte müssen KI-generierte Texte prüfen, ohne dafür ausgestattet zu sein.",
+      "url": "https://www.lto.de/recht/justiz/j/reform-anhebung-streitwertgrenze-ki-statt-anwalt"
+    },
+    {
+      "id": "hl-2026-05-04-05",
+      "headline": "KI-Halluzinationen in juristischen Modellen: Benchmark-Studie alarmiert",
+      "teaser": "Eine Benchmark-Studie (BullshitBench v2, publiziert März 2026) zeigt: Die Mehrheit der über 70 getesteten KI-Modelle erkennt bewusst unsinnige Rechtsfragen nicht und liefert stattdessen sachlich klingende Antworten. In mehr als der Hälfte der Fälle spielen Modelle bei falschen Prämissen mit. Besonders überraschend: Reasoning-Modelle verbessern die Erkennungsrate kaum. Für die deutsche Rechtspraxis stellt beck-aktuell klar – das Problem ist längst in deutschen Gerichtssälen angekommen.",
+      "url": "https://www.beck-aktuell.de/rechtsbranche/legal-tech-digitalisierung/benchmark-studie-ai-ki-modelle-slop-halluzination-unsinnigen-rechtsfragen-2026-03-10"
+    },
+    {
+      "id": "hl-2026-05-04-06",
+      "headline": "KI-Urteilsveröffentlichung: \"OffeneUrteile\" vs. politischer Stillstand",
+      "teaser": "Weniger als 3 % aller deutschen Gerichtsentscheidungen werden veröffentlicht – zu wenig, um KI sinnvoll für Rechtsprechungsanalyse zu nutzen. Die Initiative \"OffeneUrteile\" (openJur e.V.) fordert die Freigabe von einer Million Urteilen und macht mit gezielter Bürgerbeteiligung Druck. Das BMJV-Projekt ALeKS soll KI-gestützte Anonymisierung beschleunigen. Doch Transparency International und FragDenStaat warnen: Die neue Bundesregierung droht das Thema zu deprioritisieren – ein Strukturkonflikt für Legal AI in Deutschland.",
+      "url": "https://legal-tech-verzeichnis.de/legal-tech-nachrichten/neue-buergerinnenplattform-will-veroeffentlichung-von-einer-million-gerichtsurteilen-erreichen/"
+    }
+  ]
 }
