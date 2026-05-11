@@ -1,41 +1,4 @@
 {
-  "generated_at": "2026-05-08T05:53:35+00:00",
-  "items": [
-    {
-      "id": "hl-2026-05-08-01",
-      "headline": "AI Act: Vollzug ab 2. August 2026 rückt näher",
-      "teaser": "Am 2. August 2026 werden die Hochrisiko-Pflichten des EU AI Act vollständig durchsetzbar — Bußgelder bis 35 Mio. Euro drohen. Deutschland hat mit dem KI-Marktüberwachungs- und Innovationsförderungsgesetz (KI-MIG) am 11. Februar 2026 einen Kabinettsbeschluss gefasst, der Bundestag hat Ende März erstmals beraten. Kanzleien müssen Legal-AI-Systeme nun auf Hochrisiko-Einstufung prüfen, Risikomanagement dokumentieren und die seit Februar 2025 geltende AI-Literacy-Pflicht (Art. 4 KI-VO) nachweisen. Ein finales nationales Durchführungsgesetz fehlt noch — die Kombination aus unmittelbar geltendem EU-Recht und fehlender nationaler Konkretisierung erzeugt strukturelle Compliance-Unsicherheit.",
-      "url": "https://www.rueden.de/blog/strafrecht-blog/eu-ai-act-was-ab-august-2026-fuer-deutsche-unternehmen-gilt/"
-    },
-    {
-      "id": "hl-2026-05-08-02",
-      "headline": "KI-Schriftsätze überlasten Sozialgerichte bundesweit",
-      "teaser": "Beim LSG NRW stiegen Eilverfahren 2025 um über 55 Prozent auf 7.615 — ein bundesweiter Trend, den LSG-Präsident Jens Blüggel im April 2026 öffentlich beklagte. Bürgerinnen und Bürger ohne anwaltliche Vertretung reichen mit KI-Tools erstellte, oft sehr lange Schriftsätze ein, die nicht existente Rechtsprechung zitieren und eine Vielzahl nicht zielführender Anträge enthalten. Bereits im Februar 2026 hatte BSG-Präsidentin Christine Fuchsloch beim Jahrespressegespräch dieselbe Problematik geschildert. Als Reaktion testet die NRW-Sozialgerichtsbarkeit selbst KI-Lösungen zur Textfiltration — unter strikten Datenschutzauflagen.",
-      "url": "https://www.lto.de/recht/justiz/j/lsg-nrw-jahres-pressekonferenz-2026-ki-klagen-ueberlastung-sozialgerichte"
-    },
-    {
-      "id": "hl-2026-05-08-03",
-      "headline": "Halluzinierte BGH-Urteile: Haftungsfragen schärfen sich",
-      "teaser": "Mehrere deutsche Gerichte sanktionierten 2025/2026 Anwälte für KI-halluzinierte Quellen: Das AG Köln rügte einen Fachanwalt (Az. 312 F 130/25), das LG Frankfurt stellte erfundene BGH-Zitate fest (Az. 2-13 S 56/24), das LG Darmstadt kürzte ein Sachverständigenhonorar auf null (Az. 19 O 527/16, § 407a ZPO). Weltweite Datenbanken zählen bis April 2026 über 1.300 Sanktionsfälle. BRAK und DAV haben in Leitfäden klargestellt: Anwälte haften uneingeschränkt für KI-Output, ein «Grundvertrauen» in Sprachmodelle ist berufsrechtlich unzulässig (§ 43a Abs. 3 BRAO).",
-      "url": "https://kanzlei-franz.com/ki-anwaelte-rechtsfragen-haftung/"
-    },
-    {
-      "id": "hl-2026-05-08-04",
-      "headline": "Urheberrecht: Upload fremder Texte in KI-Tools riskant",
-      "teaser": "Ein aktueller LTO-Beitrag vom 3. Mai 2026 (Nico Kuhlmann, Hogan Lovells) analysiert: Schon das Hochladen eines fremden Schriftsatzes, Aufsatzes oder Kommentars in ein cloudbasiertes Sprachmodell stellt nach h.M. eine Vervielfältigung gem. § 16 Abs. 1 UrhG dar — zustimmungspflichtig, oft nicht gestattet. KI-generierte Texte selbst genießen keinen Urheberrechtsschutz (AG München, Urt. v. 13.02.2026, Az. 142 C 9786/25). Für Kanzleien und Inhouse-Juristen fehlt bislang klärende Rechtsprechung; eine Urheberrechtsreform oder BGH-Leitentscheidung wird erwartet.",
-      "url": "https://www.lto.de/recht/hintergruende/h/ki-juristen-nutzung-texte-urheberrecht"
-    },
-    {
-      "id": "hl-2026-05-08-05",
-      "headline": "KI-Justizplattform und GSJ: Länder bauen digitale Infrastruktur",
-      "teaser": "Für 2026 ist eine gemeinsame länderübergreifende KI-Plattform der deutschen Justiz geplant, über die KI-Anwendungen ausgetauscht werden sollen. Das Generative Sprachmodell der Justiz (GSJ) — finanziert aus der Digitalisierungsinitiative des Bundes — befindet sich bis Ende 2026 in der Testphase; es soll Textbausteine formulieren, Akteninhalte filtern und Schriftsätze vergleichen. In Bayern ist das Aktenstrukturierungs-Tool Codefy seit Ende 2024 flächendeckend ausgerollt, in Baden-Württemberg läuft das AKIRA-Projekt zur KI-Richterassistenz am Sozialgericht Ulm. Transparenz und wissenschaftliche Evaluierung sind dabei noch mangelhaft.",
-      "url": "https://legal-tech.de/kuenstliche-intelligenz-in-der-justiz-update/"
-    },
-    {
-      "id": "hl-2026-05-08-06",
-      "headline": "Agentic AI in Kanzleien: Haftung und Berufsrecht ungeklärt",
-      "teaser": "Harvey.ai und vergleichbare Anbieter berichten 2026 von einem Paradigmenwechsel hin zu «Agentic AI Workflows» — mehrstufigen, automatisierten Prozessketten, die ganze juristische Abläufe koordinieren. Für Kanzleien wird KI-Governance damit nicht nur Effizienzfrage, sondern berufsrechtliche Pflicht. Wer haftet bei fehlerhafter Rechtsanalyse? Das Zusammenspiel von AI Act, EU-Produkthaftungsrichtlinie und nationalem Anwaltsberufsrecht (§ 43a BRAO) ist noch nicht ausjudiziert. Mandanten fragen bereits aktiv nach dem KI-Einsatz ihrer Kanzleien — die Erwartungshaltung verändert das Mandatsverhältnis strukturell.",
-      "url": "https://www.rueden.de/blog/strafrecht-blog/eu-ai-act-was-ab-august-2026-fuer-deutsche-unternehmen-gilt/"
-    }
-  ]
+  "generated_at": "2026-05-11T07:37:10+00:00",
+  "items": []
 }
