@@ -1,4 +1,41 @@
 {
-  "generated_at": "2026-05-13T06:44:23+00:00",
-  "items": []
+  "generated_at": "2026-05-15T06:52:21+00:00",
+  "items": [
+    {
+      "id": "hl-2026-05-15-01",
+      "headline": "GEMA vs. OpenAI: Erstes KI-Urheberrechtsurteil Deutschlands",
+      "teaser": "Das LG München I hat am 11.11.2025 (Az. 42 O 14139/24) erstmals in Deutschland entschieden, dass OpenAI durch Training und Betrieb von ChatGPT Urheberrechte verletzt. Das Gericht stellte fest: Die dauerhafte Memorisierung geschützter Liedtexte im Modell und deren Wiedergabe auf einfache Prompts hin geht weit über die Text-und-Data-Mining-Schranke des § 44b UrhG hinaus. OpenAI hat Berufung eingelegt (Az. 6 U 3662/25 e), ein BGH-Verfahren gilt als wahrscheinlich. Parallel läuft das Verfahren Kneschke ./. LAION e.V. vor dem BGH. Für Kanzleien, die täglich fremde Texte in KI-Tools laden, stellt das Urteil das bisherige Upload-Verhalten grundlegend in Frage.",
+      "url": "https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki"
+    },
+    {
+      "id": "hl-2026-05-15-02",
+      "headline": "KI-Flut überrollt deutsche Sozialgerichte",
+      "teaser": "Beim LSG NRW und dem Bundessozialgericht häufen sich KI-generierte Schriftsätze von Klägern ohne Anwalt – vor allem zu Bürgergeld und Arbeitslosenversicherung. LSG-Präsident Jens Blüggel berichtete im April 2026, dass die Eilverfahren bei den acht NRW-Sozialgerichten 2025 um mehr als 55 Prozent auf 7.615 gestiegen sind. Die Schriftsätze enthalten oft halluzinierte Rechtsprechungsverweise – sogar nicht existente Rechtsmittel wurden eingelegt. Der Trend ist laut Blüggel bundesweit. Als Reaktion testet die NRW-Sozialgerichtsbarkeit selbst KI-Lösungen zur Schriftsatztriage.",
+      "url": "https://www.lto.de/recht/justiz/j/lsg-nrw-jahres-pressekonferenz-2026-ki-klagen-ueberlastung-sozialgerichte"
+    },
+    {
+      "id": "hl-2026-05-15-03",
+      "headline": "KI-Halluzinationen in Schriftsätzen: Haftung und Berufsrecht",
+      "teaser": "AG Köln (Az. 312 F 130/25, 02.07.2025), OLG Celle (Az. 5 U 1/25, 29.04.2025) und VGH Mannheim haben KI-halluzinierte Fundstellen in Anwaltsschriftsätzen explizit gerügt. Eine Studie der RAK Düsseldorf vom Februar 2026 beziffert die Quote nicht existenter oder falsch zitierter KI-Urteile in Schriftsatz-Entwürfen auf ca. 15 Prozent. Gerichte betonten: § 43a Abs. 3 BRAO verbietet unwahre Tatsachen; ungeprüfte KI-Übernahmen verletzen die Sorgfaltspflicht nach § 43 BRAO. Der DAV publizierte im April 2026 eine 32-seitige Stellungnahme. Die Berufshaftpflichtversicherer (Allianz, HDI) schließen reine KI-Leistungen bereits aus dem Deckungsschutz aus.",
+      "url": "https://anwaltsblatt.anwaltverein.de/de/themen/kanzlei-praxis/halluzinationen-in-schriftsaetzen"
+    },
+    {
+      "id": "hl-2026-05-15-04",
+      "headline": "AI-Act-Deadline 2.8.2026: Kanzleien unter Compliance-Druck",
+      "teaser": "Ab dem 2. August 2026 greifen die Kernpflichten des EU AI Act – darunter Transparenzpflichten für KI-Inhalte nach Art. 50 KI-VO (Kennzeichnung von Deepfakes, KI-generierten Texten) und die vollen Anforderungen für Hochrisiko-KI-Systeme nach Anhang III. Für Kanzleien bedeutet das konkret: Wer KI-Tools einsetzt, ohne Auftragsverarbeitungsverträge, Risikoklassifizierung und eine schriftliche KI-Policy vorzuhalten, riskiert Bußgelder und Marktüberwachungsmaßnahmen. Ein nationales Durchführungsgesetz zur Benennung der Aufsichtsbehörde steht in Deutschland noch aus – die Bundesnetzagentur gilt als Favoritin.",
+      "url": "https://www.haufe.de/recht/kanzleimanagement/kennzeichnungspflicht-fuer-ki-inhalte-gilt-ab-august-2026_222_681220.html"
+    },
+    {
+      "id": "hl-2026-05-15-05",
+      "headline": "BRAK-Leitfaden & DAV-Stellungnahme: KI-Berufsrecht entsteht",
+      "teaser": "Im Dezember 2024 veröffentlichte die Bundesrechtsanwaltskammer ihren ersten KI-Leitfaden, im April 2026 folgte der Deutsche Anwaltverein mit einer 32-seitigen Initiativ-Stellungnahme. Beide stellen klar: KI-Einsatz ist nicht verboten, aber an § 43a BRAO (Verschwiegenheit, Sachlichkeitsgebot) und an die Sorgfaltspflicht nach § 43 BRAO gebunden. Mandatsdaten dürfen nicht in Modell-Trainings einfließen; nur Tools mit Auftragsverarbeitungsvertrag und Training-Opt-Out sind zulässig. Laut DAV-Umfrage (Mai 2026) setzen 47 Prozent der Kanzleien KI regelmäßig ein – aber nur 23 Prozent haben den Einsatz schriftlich dokumentiert.",
+      "url": "https://skill-sprinters.de/blog/branchen/ki-anwaltskanzlei-2026-brao-konforme-tools/"
+    },
+    {
+      "id": "hl-2026-05-15-06",
+      "headline": "KI-Plattform für die Justiz: Länder bauen gemeinsame Infrastruktur",
+      "teaser": "Für 2026 planen Bund und Länder eine gemeinsame KI-Plattform, über die Anwendungen länderübergreifend ausgetauscht werden können. Parallel laufen mehrere Pilotprojekte: In Bayern wird das Dokumentenstrukturierungs-Tool Codefy seit Ende 2024 flächendeckend eingesetzt; Baden-Württemberg erforscht mit AKIRA (Allgemeine KI-Richterassistenz) die KI-gestützte Vorstrukturierung am Sozialgericht Ulm; das Generative Sprachmodell der Justiz (GSJ) befindet sich bis Ende 2026 in der Testphase. Kritiker monieren fehlende Transparenz über Projektfortschritte und mangelnde wissenschaftliche Evaluation.",
+      "url": "https://legal-tech.de/kuenstliche-intelligenz-in-der-justiz-update/"
+    }
+  ]
 }
