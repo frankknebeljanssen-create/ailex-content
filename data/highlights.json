@@ -1,4 +1,41 @@
 {
-  "generated_at": "2026-05-25T08:14:26+00:00",
-  "items": []
+  "generated_at": "2026-05-27T07:58:25+00:00",
+  "items": [
+    {
+      "id": "hl-2026-05-27-01",
+      "headline": "GEMA vs. OpenAI: Urheberrecht trifft KI-Training",
+      "teaser": "Das LG München I (Az. 42 O 14139/24, Urt. 11.11.2025) hat entschieden: Das Memorisieren und Ausgeben urheberrechtlich geschützter Liedtexte durch ChatGPT verletzt §§ 16, 19a UrhG – die Text-und-Data-Mining-Schranke (§ 44b UrhG) greife nicht. OpenAI wurde zu Unterlassung, Auskunft und Schadensersatz verurteilt; das Urteil ist nicht rechtskräftig. Parallel verhandelt das LG München am 9.3.2026 das erste europäische Verfahren zu Audio-KI (GEMA vs. Suno, Urteilstermin 12. Juni 2026). Die Entscheidungen dürften Lizenzpflichten für sämtliche generative KI-Anbieter in Europa vorzeichnen.",
+      "url": "https://www.lto.de/recht/nachrichten/n/42o1413924-lg-muenchen-i-gema-openai-chatgpt-songtexte-ki"
+    },
+    {
+      "id": "hl-2026-05-27-02",
+      "headline": "AI-Act-Deadline 2.8.2026: Hochrisiko-KI muss compliant sein",
+      "teaser": "Ab dem 2. August 2026 werden die breiten Pflichten des EU AI Acts vollständig anwendbar – darunter Transparenzpflichten nach Art. 50, Hochrisiko-Anforderungen für KI in Gerichts- und Staatsanwaltsverfahren sowie Kennzeichnungspflichten für KI-generierte Inhalte. Der AI Act stuft justizielle KI-Systeme grundsätzlich als Hochrisiko ein (Anhang III). Wer bis August keine Compliance-Struktur hat, riskiert Bußgelder und – nach § 823 Abs. 2 BGB als Schutzgesetz – auch privatrechtliche Klagen. Compliance-Projekte benötigen laut Praktikern mindestens drei Monate Vorlauf.",
+      "url": "https://www.anwalt.de/rechtstipps/countdown-zum-ai-act-das-muessen-unternehmen-bis-august-2026-erledigt-haben-267625.html"
+    },
+    {
+      "id": "hl-2026-05-27-03",
+      "headline": "KI-Halluzinationen im Schriftsatz: Berufsrecht und Haftung",
+      "teaser": "Deutsche Gerichte sanktionieren zunehmend KI-Fehler in Anwaltsschriftsätzen: Das AG Köln (Az. 312 F 130/25, 2.7.2025) rügte erfundene Zitate als Verstoß gegen das Sachlichkeitsgebot (§ 43a Abs. 3 BRAO). Das LG Darmstadt (Az. 19 O 527/16) strich einem Sachverständigen die Vergütung vollständig, weil er sein Gutachten maßgeblich durch KI erstellen ließ. Eine RAK-Düsseldorf-Studie (Februar 2026) belegt: 15 % der KI-zitierten Urteile in Schriftsatzentwürfen sind fehlerhaft. Der DAV fordert in seiner April-2026-Stellungnahme (32 Seiten) schriftliche KI-Policies in jeder Kanzlei.",
+      "url": "https://www.datenschutzticker.de/2026/02/ki-halluzinationen-vor-gericht-haftungsrisiken-fuer-anwaelte/"
+    },
+    {
+      "id": "hl-2026-05-27-04",
+      "headline": "Justizcloud & KI-Assistenz: Digitalisierungsoffensive der Gerichte",
+      "teaser": "Bund und Länder haben am 8.1.2026 einen Vertrag zum Aufbau einer bundeseinheitlichen Justizcloud unterzeichnet; eine erste lauffähige Version (MVP) ist bis Anfang 2027 geplant. Gleichzeitig rollt Bayern sein KI-Tool \"ALeKS\" (Anonymisierungs- und Leitsatzerstellungs-Kit) seit März 2026 am OLG München aus und will damit 50.000 Urteile veröffentlichen (\"Projekt 50k\"). In Niedersachsen wird 2026 der KI-Assistent EMIL pilotiert, weitere Länder testen Dokumentenanalysesysteme. Art. 92 GG bleibt Grenze: Die Letztentscheidung muss beim Richter liegen.",
+      "url": "https://www.heise.de/news/Kuenstliche-Intelligenz-bei-Gericht-Wie-die-Justiz-digital-aufruestet-11305468.html"
+    },
+    {
+      "id": "hl-2026-05-27-05",
+      "headline": "BRAO-Compliance: Verschwiegenheit vs. Cloud-KI",
+      "teaser": "§ 43a Abs. 2 BRAO und § 203 StGB ziehen scharfe Grenzen: Wer Mandatsdaten in KI-Tools ohne AVV und Training-Opt-out eingibt, begeht eine Berufspflichtverletzung – unabhängig davon, ob ein Schaden entsteht. Die BRAK hat dazu im Dezember 2024 einen Leitfaden veröffentlicht, der DAV folgte im April 2026 mit einer Initiativstellungnahme. Laut DAV-Umfrage (Mai 2026) nutzen 47 % der deutschen Kanzleien KI-Tools regelmäßig, aber nur 23 % haben den Einsatz schriftlich dokumentiert. Berufshaftpflichtversicherer (Allianz, HDI) schließen seit 2025/2026 reine KI-Leistungen aus dem Deckungsschutz aus.",
+      "url": "https://skill-sprinters.de/blog/branchen/ki-anwaltskanzlei-2026-brao-konforme-tools/"
+    },
+    {
+      "id": "hl-2026-05-27-06",
+      "headline": "KI im Zivilprozess: Streitwertreform öffnet Tür für Legal-AI",
+      "teaser": "Das zum 1.1.2026 in Kraft getretene Gesetz zur Änderung des Zuständigkeitsstreitwerts (neu: 10.000 € Grenze Amtsgericht/Landgericht) schafft strukturell mehr anwaltslose Verfahren vor Amtsgerichten – und befeuert damit den Einsatz von KI zur eigenständigen Prozessführung durch Bürger. LTO analysiert (25.1.2026), dass dies die KI-Nutzung im Zivilprozessrecht \"deutlich intensivieren\" dürfte. Die Reformkommission \"Zivilprozess der Zukunft\" empfiehlt parallel den KI-Einsatz zur Verfahrensunterstützung, setzt aber Art. 92 GG als absolute Grenze für automatisierte Entscheidungen.",
+      "url": "https://www.lto.de/recht/justiz/j/reform-anhebung-streitwertgrenze-ki-statt-anwalt"
+    }
+  ]
 }
